@@ -236,7 +236,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: ${{ inputs.name }}-Linux-AppImage
-          path: ${{ inputs.name }}.AppImage
+          path: "**/${{ inputs.name }}.AppImage"
           retention-days: 3
           if-no-files-found: ignore
 
