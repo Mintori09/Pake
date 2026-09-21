@@ -227,7 +227,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: ${{ inputs.name }}-Linux-deb
-          path: ${{ inputs.name }}.deb
+          path: '**/*.deb'
           retention-days: 3
           if-no-files-found: ignore
 
@@ -250,7 +250,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: ${{ inputs.name }}-Linux-rpm
-          path: ${{ inputs.name }}.rpm
+          path: '**/*.rpm'
           retention-days: 3
           if-no-files-found: ignore
 
